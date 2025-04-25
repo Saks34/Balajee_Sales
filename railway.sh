@@ -1,10 +1,13 @@
 #!/bin/bash
-# Set proper permissions
+# Set permissions
 chmod -R 755 public
 chmod -R 755 storage
 
-# Create required links
-php artisan storage:link
+# Generate application key if missing
+[ -z "$APP_KEY" ] && php artisan key:generate
 
-# Start the web server
-vendor/bin/heroku-php-apache2 public/
+# Run migrations
+php artisan migrate --force
+
+# Start PHP server
+php -S 0.0.0.0:$PORT -t public
