@@ -1,14 +1,12 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '7788c8586aa76d5af3e378abb3d3a820a000d03e',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0e6d6d70ac0b1980f9ee9d2bd6a5e932e5522587',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
-        'aliases' => array(
-            0 => '10.x-dev',
-        ),
+        'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
@@ -176,6 +174,15 @@
             'install_path' => __DIR__ . '/../hamcrest/hamcrest-php',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'heroku/heroku-buildpack-php' => array(
+            'pretty_version' => 'v265',
+            'version' => '265.0.0.0',
+            'reference' => '86d85038a27f17254164d68dffbbe580f5ea58ea',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../heroku/heroku-buildpack-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'illuminate/auth' => array(
             'dev_requirement' => false,
@@ -400,14 +407,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '7788c8586aa76d5af3e378abb3d3a820a000d03e',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0e6d6d70ac0b1980f9ee9d2bd6a5e932e5522587',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
-            'aliases' => array(
-                0 => '10.x-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
